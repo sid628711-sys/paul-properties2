@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paul Properties</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0a0a0a;
+  color:#eee;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav h2{
+  color:#d4af37;
+  font-family:'Playfair Display',serif;
+}
+
+nav a{
+  color:#ccc;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#d4af37;
+}
+
+/* HERO */
+.hero{
+  height:85vh;
+  display:flex;
+  align-items:center;
+  padding:0 60px;
+  background:
+  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)),
+  url('images/collage.jpg');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h1{
+  font-size:54px;
+  font-family:'Playfair Display',serif;
+}
+
+.hero p{
+  margin-top:12px;
+  color:#bbb;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 28px;
+  background:#d4af37;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+.section{
+  padding:70px 60px;
+}
+
+.section h2{
+  font-family:'Playfair Display',serif;
+  margin-bottom:20px;
+}
+
+/* ABOUT */
+.about p{
+  color:#aaa;
+  max-width:600px;
+  line-height:1.6;
+}
+
+/* PROPERTIES */
+.property{
+  display:flex;
+  justify-content:space-between;
+  padding:18px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.property:hover{
+  background:rgba(255,255,255,0.05);
+}
+
+.price{
+  color:#d4af37;
+}
+
+.status{
+  font-size:12px;
+  color:#888;
+}
+
+/* CONTACT */
+.form-box{
+  max-width:400px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  background:#111;
+  border:1px solid #333;
+  color:#fff;
+  border-radius:6px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background:#d4af37;
+  border:none;
+  color:#000;
+  border-radius:6px;
+}
+
+.success{
+  color:lightgreen;
+  display:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  color:#777;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Paul Properties</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#properties">Properties</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/siddhartha-shekhar-52a614313" target="_blank">LinkedIn</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Luxury Rentals.<br>No Brokerage.</h1>
+    <p>Direct owner listings in Jamshedpur.</p>
+    <a href="#properties" class="btn">Explore Properties</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <h2>About</h2>
+  <p>
+    Paul Properties offers direct rental listings across Jamshedpur including Dimna Road and Sakchi. 
+    With a focus on trust, transparency, and zero brokerage, all properties are managed directly by the owner.
+  </p>
+</section>
+
+<!-- PROPERTIES -->
+<section class="section" id="properties">
+  <h2>Properties</h2>
+
+  <div class="property">
+    <div>
+      <h3>3BHK · Dimna Road</h3>
+      <p>Spacious family apartment</p>
+    </div>
+    <div>
+      <div class="price">₹15,000/month</div>
+      <div class="status">Rented</div>
+    </div>
+  </div>
+
+  <div class="property">
+    <div>
+      <h3>2BHK · Sakchi</h3>
+      <p>Prime location</p>
+    </div>
+    <div>
+      <div class="price">₹12,000/month</div>
+      <div class="status">Rented</div>
+    </div>
+  </div>
+
+  <div class="property">
+    <div>
+      <h3>1BHK · Dimna Road</h3>
+      <p>Perfect for individuals</p>
+    </div>
+    <div>
+      <div class="price">₹8,000/month</div>
+      <div class="status">Rented</div>
+    </div>
+  </div>
+
+  <div class="property">
+    <div>
+      <h3>Commercial Shop · Sanjay Market</h3>
+      <p>High footfall area</p>
+    </div>
+    <div>
+      <div class="price">₹15,000/month</div>
+      <div class="status">Rented</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Join Waiting List</h2>
+
+  <div class="form-box">
+    <form id="f">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p class="success" id="msg">Submitted successfully</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="color:#d4af37;">Paul Properties</p>
+  <p>Direct Owner · No Brokerage</p>
+  <p>
+    <a href="https://www.linkedin.com/in/siddhartha-shekhar-52a614313" target="_blank" style="color:#d4af37;">
+      LinkedIn Profile
+    </a>
+  </p>
+  <p>📞 +91 6287113334</p>
+</footer>
+
+<a href="https://wa.me/916287113334" class="whatsapp">Chat</a>
+
+<script>
+const f=document.getElementById("f");
+const msg=document.getElementById("msg");
+
+f.addEventListener("submit",e=>{
+  e.preventDefault();
+  msg.style.display="block";
+  f.reset();
+});
+</script>
+
+</body>
+</html>
